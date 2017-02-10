@@ -1,0 +1,122 @@
+.mainStyle{
+    width: 125px; height: 45px; background: white; border-radius: 4px;
+    position: relative; overflow: hidden; border: 2px solid white; color: #333; cursor: pointer;
+}
+.style{
+    position: absolute; transition: all 0.3s ease-in;
+}
+
+
+body{
+    background: #2ecc71;
+}
+.main{
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+}
+.search{
+    position: relative;}
+button{
+    margin-bottom: 5px;
+}
+
+
+.header-banner {
+    background-color: #333;
+    background-image: url("GlitterBombLogo.png");
+    background-position: center -300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+
+
+.icon, .home, .icon2, .icon3, .icon4{
+@extend .mainStyle;
+}
+.icon:before{
+@extend .style; content: ''; width: 200px; height: 100px;
+    z-index: -1; transform: translate(-50%,-50%);
+    opacity: 0;left: 50%; top: 50%; border: 2px solid #fcd04b;
+}
+.icon:hover:before{
+@extend .style; z-index: 1; transform: translate(-50%,-50%); width: 110px; border-radius: 4px;
+    height: 30px; opacity: 1;left: 50%; top: 50%; border: 2px solid #fcd04b; transition: all 0.3s ease-out;
+}
+
+/****************** icon1 *****************************/
+
+.home:before{
+@extend .style; background: #f06060; content: ''; width: 60px;
+    height: 60px; left: -70%;
+    opacity: 0; top: 50%; transform: translateY(-50%) rotate(12deg);
+}
+.home:after{
+@extend .style; background: #f06060; content: ''; width: 60px;
+    height: 60px; right: -70%;
+    opacity: 0;transform: translateY(-50%) rotate(12deg); top: 50%;
+}
+.home:hover:before{
+@extend .style; transform: translateY(-50%) rotate(12deg);
+    top: 50%; width: 60px; height: 60px; opacity: 1; left: -50%; padding: 10px;
+}
+.home:hover:after{
+@extend .style; transform: translateY(-50%) rotate(12deg);
+    top: 50%; width: 60px; height: 60px; opacity: 1; right: -50%; padding: 10px;
+}
+
+/****************** icon2 *****************************/
+
+.icon2:before{
+@extend .style; background: rgba(14, 131, 205, 0.91); content: ''; width: 60px;
+    height: 60px; left: 0%;
+    opacity: 0; top: 50%; transform: translateY(-50%) rotate(12deg);
+}
+.icon2:after{
+@extend .style; background: rgba(14, 131, 205, 0.91); content: ''; width: 60px;
+    height: 60px; right: 0%;
+    opacity: 0;transform: translateY(-50%) rotate(12deg); top: 50%;
+}
+.icon2:hover:before{
+@extend .style; transform: translateY(-50%) rotate(12deg);
+    top: 50%; width: 60px; height: 60px; opacity: 1; left: -60%; padding: 14px;
+}
+.icon2:hover:after{
+@extend .style; transform: translateY(-50%) rotate(12deg);
+    top: 50%; width: 60px; height: 60px; opacity: 1; right: -60%; padding: 14px;
+}
+
+/****************** icon3 *****************************/
+
+.icon3:before{
+@extend .style; content:'hoverrr..'; background: #9e54bd; width: 165px;
+    height: 45px; left: -40%; color: #fff; text-align: center;
+    opacity: 0; top: 0%; transform: translateY(0%) rotateZ(-65deg);
+    transform-origin: left;
+}
+.icon3:hover:before{
+@extend .style; transform: translateY(-50%) rotateZ(0deg);
+    top: 50%; width: 145px; height: 45px; opacity: 1; left: -10%; padding-top: 22%;
+}
+
+/****************** icon4 *****************************/
+
+.icon4:before{
+@extend .style; content:'hoverrr..'; background: #9e54bd; width: 125px;
+    height: 45px; left: -90%; color: #fff; text-align: center; padding-top: 22%;
+    opacity: 0; top: 0%; transform: translateY(-50%); top: 50%;
+}
+.icon4:hover:before{
+@extend .style; transform: translateY(-50%);
+    top: 50%; width: 125px; height: 45px; opacity: 1; left: 0%; padding-top: 22%;
+}
+
+
+#text{
+    width: 0px; visibility: hidden;transition: width 2s, visibility 2.1s linear;
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.newClass{
+    width: 200px !important; visibility: visible !important; transition: width 2s, visibility 2.1s linear !important;
+}
