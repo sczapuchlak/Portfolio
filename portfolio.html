@@ -1,67 +1,47 @@
-<!doctype html>
-<html lang="en-US">
-<head>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Stephanie's Portfolio</title>
+            <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--- Embedding google fonts I want to use --->
+        <link href="https://fonts.googleapis.com/css?family=Rouge+Script|Great+Vibes" rel="stylesheet">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Stephanie's Portfolio</title>
+    <!--- The viewport is the visible area of the page. This tag sets the width of the page to the
+    width of the browser window. --->
+
+        <meta name="viewport" content="width=device-width initial-scale=1">
+    <!---This downloads bootstrap from a cdn. This adds it to the hmtl file ----->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 </head>
+
 <body>
 
 <header>
-    <div class="header-banner">
-        <a href="/" class="logo"></a>
-        <h1>Art in Finland</h1>
+    <div class="navbar navbar-inverse navbar-fixed-top" id="fixedNav">
+        <img src="images/stephmoji.gif" class="stephmoji-picture" width="6%" height="6%">
+            <ul class="top-vnav-bar" id="myTopNav">
+                <li><a class="active" href="#home">Home</a> </li>
+                <li><a  href="#work">Work I've Done</a> </li>
+                <li><a  href="#contactMe">Contact Me</a> </li>
+
+                <!---<li><a href="javascript:void(0);"class="menuDropdown" style="font-size:15px;" onclick="myFunction()">☰</a></li>-->
+                </li>
+            </ul>
+        <div class="headerBreak"></div>
     </div>
-<div class="container">
-    <!-- Navigation -->
-    <header> <a href="">
-        <h4 class="logo"></h4>
-    </a>
-        <div class = "main">
-            <div class = "search">
-        <nav>
-
-                <button class = "homeIcon"><a href="#home">HOME</a></button>
-            <button class = "aboutMeIcon"><a href="#aboutMe">ABOUT ME</a></button>
-            <button class = "Contacticon"><a href="#Contact">CONTACT</a></button>
-            <button class = "WorkIveDone"><a href="#WorkIveDone">WORK IV'E DONE</a></button>
-        </nav>
+    <div class="headerBreak"></div>
+    <div class="jumbotron" style="height: 900px">
+        <div class="container">
+        <h1  id="nameHeader">I am Stephanie</h1>
+        <h2  id="descriptionHeader">a web developer</h2>
         </div>
-        </div>
-    </header>
-    <!----- Welcome Section ----->
-    <section class="home" id="home">
-        <h2 class="welcomeTo">WELCOME TO  <span class="unicornGlitter">UNICORN GLITTER BOMB DESIGNS</span></h2>
-        <p class="tagline">Where creativity meets exceptional functionality</p>
-    </section>
-
-    <!-----About me section ----->
-    <section class="about" id ="about">
-        <h2 class="hidden">About This is where things about me will go</h2>
-    </section>
+    </div>
 
 
+</header>
 
 
-
-    <!-- More Info Section -->
-
-        <article class="myWork">
-            <h3>MY WORK</h3>
-
-        </article>
-    </footer>
-    <!-- Footer Section -->
-    <section class="footer_banner" id="contact">
-        <h2 class="hidden">Contact Me </h2>
-        <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES FOLLOW ME ON FACEBOOK</p>
-        <div class="button">subscribe</div>
-    </section>
-    <!-- Copyrights Section -->
-    <div class="copyright">&copy;2017 - <strong>Unicorn Glitter Bomb</strong></div>
-</div>
-<!-- Main Container Ends -->
 </body>
 </html>
