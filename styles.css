@@ -3,6 +3,7 @@
 text-align: center;
     background-image: url("images/blackandwhitescene.jpg");
     background-size: auto;
+    border-bottom: solid 4px coral;
 
 }
 body {
@@ -17,11 +18,26 @@ body {
     max-width: 250px;
     vertical-align: middle;
 }
-
+#standingOutQuote{
+    color: #eeec2a;
+    padding-top: 250px;
+    padding-left:10px;
+    font-size: 120px;
+    font-family: 'Great Vibes', cursive, bold;
+    text-shadow: 8px 8px 14px #28d8a9, 0 0 25px #FCA263, 0 0 5px blue;;
+}
+#standingOutQuote2{
+    color: #eeec2a;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 120px;
+    font-family: 'Great Vibes', cursive, bold;
+    text-shadow: 8px 8px 14px #28d8a9, 0 0 25px #FCA263, 0 0 5px blue;;
+}
 #nameHeader{
     color: coral;
-    padding-top: 25%;
-    padding-left: 45px;
+    padding-top: 0;
+    padding-left: 0;
     font-size: 60px;
     font-family: 'Great Vibes', cursive, bold;
     text-shadow: 8px 8px 8px #28d8a9, 0 0 25px rgba(128, 0, 128, 0.37), 0 0 5px darkblue;;
@@ -31,7 +47,7 @@ body {
 .descriptionHeader{
     color: coral;
     font-size: 45px;
-    padding-left: 45px;
+    padding-left: 0;
     font-family: 'Great Vibes', cursive, bold;
     text-shadow: 8px 8px 8px #28d8a9, 0 0 25px rgba(128, 0, 128, 0.37), 0 0 5px darkblue;;
 }
@@ -67,24 +83,24 @@ body {
 
 }
 
-
 .headerBreak{
     width:100%;
     height:60px;
     border-bottom: 3px solid lightsalmon;
 }
+
 .column-left{
-    float: left; width: 20%;
+    float: left; width: 15%;
 }
 .column-center{
     text-align: center;
-   display: inline-block; width: 60%;
+   display: inline-block; width: 70%;
     font-family: "Lato", sans-serif;
     font-size: 24px;
     ;
 }
 .column-right{
-   float: right; width: 20%;
+   float: right; width: 15%;
 
 }
 .infoAboutMe{
@@ -98,5 +114,113 @@ body {
     float: right; width: 48%;
 
 }
+#footer{
+    background-color: black;
+    color: #28d8a9;
+    text-align: center;
+    border-top: 3px solid coral;
+    height: 60px;  /* footer height */
+    padding-top: 20px;
+    display: block;
+    margin-top: 20px; /* space between content and footer */
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+}
+
+.column {
+    padding-top: 3%;
+    width: 20%;
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.gutter{
+    padding-top: 3%;
+    width: 5%;
+    float: left;}
+.explanation{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 16px;
+
+}
+.calipic2{
+    width:100%;
+    height: 200px;
+    z-index:0 ;
+    padding-top: 15px;
+
+}
+.infoAboutMe2{
+    padding-top: 5%;
+    text-align: center;
+    display: inline-block; width: 50%;
+    font-family: "Lato", sans-serif;
+    font-size: 36px;
+}
+.bio{
+    text-align: center;
+    float: right; width: 50%;
+    font-size: 22px;
+}
+.interestsOfMine {
+   padding-top: 30px;
+    text-align: center;
+    float: right; width: 50%;
+    font-size: 22px;
+    font-style: italic;
+}
+.interestsOfMine ul li{
+    text-align: center;
+    list-style-position: inside;
+    }
+#fewInterests{
+    font-size: 28px;
+    padding-bottom: 5px;
+}
+
+.pictureBoxes{
+    text-align: left;
+    float:left; width: 50%;
+    font-size: 22px;
+}
+.square {
+    float:right;
+    position: relative;
+    width: 30%;
+    padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+}
+
+.img_1-1{background-image:url('https://c1.staticflickr.com/3/2916/33158981846_25fe75917e_q.jpg');}
+.img_1-2{background-image:url('https://c1.staticflickr.com/4/3707/33200714265_22e6292893_q.jpg');}
+.img_1-3{background-image:url('https://c1.staticflickr.com/1/654/33158981826_b9c3647a95_q.jpg');}
+
+.img_2-1{background-image:url('https://c1.staticflickr.com/3/2932/33158982006_9457087372_q.jpg');}
+.img_2-2{background-image:url('https://c1.staticflickr.com/1/584/33200714155_5e8ddae714_q.jpg');}
+.img_2-3{background-image:url('https://c1.staticflickr.com/4/3917/33200715235_e16c6b7d41_q.jpg');}
+
+.img_3-1{background-image:url('https://c1.staticflickr.com/4/3939/33158981706_c2f37bfb8d_q.jpg');}
+.img_3-2{background-image:url('https://c1.staticflickr.com/1/614/33200714375_b1ceaae419_q.jpg');}
+.img_3-3{background-image:url('https://c1.staticflickr.com/1/755/33158982086_afc33c805c_q.jpg');}
+
+.img_4-1{background-image:url('https://c1.staticflickr.com/4/3834/33200714295_d0b6fa7dd2_q.jpg');}
+.img_4-2{background-image:url('https://c1.staticflickr.com/1/673/33200714245_cfb3d32ae3_q.jpg');}
+.img_4-3{background-image:url('https://c1.staticflickr.com/1/653/33200714405_fd72967e66_q.jpg');}
 
 
+.footer-social { float: right; margin-top:5px; }
+.footer-social ul { padding:0; margin:0 0 0 10px;}
+.footer-social li {float:left; list-style:none; margin-left:5px;}
+
+
+#map {
+    height: 300px;
+    width: 600px;
+}

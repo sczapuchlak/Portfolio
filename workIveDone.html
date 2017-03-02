@@ -6,6 +6,9 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!--- Embedding google fonts I want to use --->
     <link href="https://fonts.googleapis.com/css?family=Lato:li|Great+Vibes" rel="stylesheet">
+    <!----Link to the W3Schools template I used for the 'Things I'm Really Good At' Section--->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <script type="text/javascript" src="jsPortfolio.js"></script>
 
     <!--- The viewport is the visible area of the page. This tag sets the width of the page to the
     width of the browser window. --->
@@ -20,9 +23,10 @@
 
 <div class="navbar navbar-inverse navbar-fixed-top" id="fixedNav">
     <ul class="top-vnav-bar" id="myTopNav">
-        <li><a  href="portfolio.html">Home</a> </li>
         <li><a  class = "active" href="workIveDone.html">Work I've Done</a> </li>
         <li><a  href="ContactMe.html">Contact Me</a> </li>
+        <li><a  href="AboutMe.html">About Me</a> </li>
+        <li><a  href="portfolio.html">Home</a> </li>
     </ul>
     <div class="headerBreak"></div>
 </div>
@@ -30,15 +34,15 @@
 <header>
     <div class="jumbotron" style="height: 900px">
 
-        <h1  id="nameHeader">Stephanie Zapuchlak</h1>
-        <h2 class= "descriptionHeader"><img src="images/stephmoji.gif" class="stephmoji-picture"> </h2>
-        <h2  class="descriptionHeader"> web developer</h2>
+        <h1 id="standingOutQuote">Fitting in is not the objective. </h1>
+        <h1 id="standingOutQuote2" onmouseover="mOver(this)" onmouseout="mOut(this)">Standing out is.</h1>
     </div>
 </header>
 
 <div class="container">
     <div class="column-left"><h1 class ="margin1"> </h1></div>
     <div class="column-center"> <h1 class ="about-me">
+    This Section is Still Under Construction!
     </h1>
         </h1></div>
 
@@ -47,6 +51,23 @@
 </div>
 
 
+<!-- The Footer Goes Here -->
+<!--- Using the w3Schools frameworks/classes for the layout styles and hover abilities --->
+<footer class="footer" id="footer">
+    <a href="https://www.github.com/sczapuchlak" class="w3-hover-text-yellow">&#169; Zapuchlak 2017</a>
+    <div class="footer-social">
+
+        <li><a href="http://www.linkedin.com/in/sczapuchlak">
+            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png' height="25px" width="25px" />
+        </a></li>
+        <li><a href="http://www.github.com/sczapuchlak">
+            <img src='https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png 'height="25px" width="25" />
+        </a></li>
+        <li><a href="https://www.facebook.com/champagne.and.peroxide">
+            <img src='http://condevcenter.org/wp-content/themes/fifteen/images/social/boxed/facebook.png'height="28px" width="28px" />
+        </a></li>
+    </div>
+</footer>
 
 </body>
 

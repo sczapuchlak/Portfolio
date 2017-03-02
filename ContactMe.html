@@ -7,6 +7,11 @@
     <!--- Embedding google fonts I want to use --->
     <link href="https://fonts.googleapis.com/css?family=Lato:li|Great+Vibes" rel="stylesheet">
     <script rel="script" type="text/javascript" href="jsPortfolio"></script>
+    <!----Link to the W3Schools template I used for the 'Things I'm Really Good At' Section--->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <script type="text/javascript" src="jsPortfolio.js"></script>
+
+
     <!--- The viewport is the visible area of the page. This tag sets the width of the page to the
     width of the browser window. --->
 
@@ -20,9 +25,10 @@
 
 <div class="navbar navbar-inverse navbar-fixed-top" id="fixedNav">
     <ul class="top-vnav-bar" id="myTopNav">
-        <li><a  href="portfolio.html">Home</a> </li>
         <li><a  href="workIveDone.html">Work I've Done</a> </li>
         <li><a  class = "active" href="#contactMe">Contact Me</a> </li>
+        <li><a  href="AboutMe.html">About Me</a> </li>
+        <li><a  href="portfolio.html">Home</a> </li>
     </ul>
     <div class="headerBreak"></div>
 </div>
@@ -30,9 +36,8 @@
 <header>
     <div class="jumbotron" style="height: 900px">
 
-        <h1  id="nameHeader">Stephanie Zapuchlak</h1>
-        <h2 class= "descriptionHeader"><img src="images/stephmoji.gif" class="stephmoji-picture"> </h2>
-        <h2  class="descriptionHeader"> web developer</h2>
+        <h1 id="standingOutQuote">Fitting in is not the objective. </h1>
+        <h1 id="standingOutQuote2" onmouseover="mOver(this)" onmouseout="mOut(this)" >Standing out is.</h1>
     </div>
 </header>
 
@@ -42,23 +47,23 @@
         <h1> Feel free to contact me with any questions or comments!</h1>
         <form id="contact-form" class="form" action="#" method="POST" role="form">
             <div class="form-group">
-                <label class="form-label" for="name">Your Name</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1" required>
+                <label class="form-label" for="name"   >Your Name</label>
+                <input type="text" class="form-control"  id="name" onchange="upperCase()" name="name" placeholder="Your name" tabindex="1" required>
             </div>
             <div class="form-group">
-                <label class="form-label" for="email">Your Email</label>
+                <label class="form-label" for="email"onchange="upperCase1()">Your Email</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2" required>
             </div>
             <div class="form-group">
-                <label class="form-label" for="subject">Subject</label>
+                <label class="form-label" for="subject"onchange="upperCase2()">Subject</label>
                 <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3">
             </div>
             <div class="form-group">
-                <label class="form-label" for="message">Message</label>
+                <label class="form-label" for="message"onchange="upperCase3()">Message</label>
                 <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4" required></textarea>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-start-order">Send Message</button>
+                <button type="submit" class="btn btn-start-order" id="SendMessageBtn" href="mailto:sczapuchlak@gmail.com">Send Me a Message</button>
             </div>
         </form>
     </div>
@@ -66,20 +71,34 @@
 
 
     </h1>
-        </h1></div>
+        </h1><div>
 
-    <div class="column-right"><h1 class ="margin2"></h1></div>
+
 
 
 
 </div>
 
-
 <!-- The Footer Goes Here -->
 <!--- Using the w3Schools frameworks/classes for the layout styles and hover abilities --->
-<footer class="w3-center w3-black w3-padding-16">
+<footer class="footer" id="footer">
     <a href="https://www.github.com/sczapuchlak" class="w3-hover-text-yellow">&#169; Zapuchlak 2017</a>
+    <div class="footer-social">
+
+        <li><a href="http://www.linkedin.com/in/sczapuchlak">
+            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png' height="25px" width="25px" />
+        </a></li>
+        <li><a href="http://www.github.com/sczapuchlak">
+            <img src='https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png 'height="25px" width="25" />
+        </a></li>
+        <li><a href="https://www.facebook.com/champagne.and.peroxide">
+            <img src='http://condevcenter.org/wp-content/themes/fifteen/images/social/boxed/facebook.png'height="28px" width="28px" />
+        </a></li>
+    </div>
 </footer>
+
+
+
 </body>
 
 </html>

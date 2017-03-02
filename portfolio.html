@@ -10,8 +10,7 @@
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
             <!--- Link to font awesome for the icons displayed on page --->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <!--- Link to the graph I learned how to make at canvasjs--->
-        <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+      <script type="text/javascript" src="jsPortfolio.js"></script>
 
 
 
@@ -28,25 +27,28 @@
 
 <div class="navbar navbar-inverse navbar-fixed-top" id="fixedNav">
     <ul class="top-vnav-bar" id="myTopNav">
-        <li><a class="active" href="#home">Home</a> </li>
         <li><a  href="workIveDone.html">Work I've Done</a> </li>
         <li><a  href="ContactMe.html">Contact Me</a> </li>
+        <li><a  href="AboutMe.html">About Me</a> </li>
+        <li><a class="active" href="#home">Home</a> </li>
     </ul>
     <div class="headerBreak"></div>
 </div>
 
     <header>
         <div class="jumbotron" style="height: 900px">
-
-            <h1  id="nameHeader">Stephanie Zapuchlak</h1>
-            <h2 class= "descriptionHeader"><img src="images/stephmoji.gif" class="stephmoji-picture"> </h2>
-             <h2  class="descriptionHeader"> web developer</h2>
+            <h1 id="standingOutQuote">Fitting in is not the objective. </h1>
+            <h1 id="standingOutQuote2" onmouseover="mOver(this)" onmouseout="mOut(this)">Standing out is.</h1>
         </div>
     </header>
 
 <div class="container">
     <div class="column-left"><h1 class ="margin1"> </h1></div>
         <div class="column-center"> <h1 class ="about-me">
+            <h1  id="nameHeader">Stephanie Zapuchlak</h1>
+            <h2 class= "descriptionHeader"><img src="images/stephmoji.gif" class="stephmoji-picture"> </h2>
+            <h2  class="descriptionHeader" onmouseover="mOverDesign(this)" onmouseout="mOutDesign(this)" > Web Developer</h2>
+
             My name is Stephanie Zapuchlak and I am a <b>Web Developer and Designer</b>.
             I have a passion for making beautiful, cohesive sites with intuitive
             interfaces. Not only do I enjoy the design process, but coding has
@@ -56,10 +58,9 @@
             in the Wisconsin traditions of <b> bubbly beer</b>,<b> great cheese</b>, <b>and interesting conversation.</b>
     </h1></div>
 
-    <div class="column-right"><h1 class ="margin2"></h1></div>
+    <hr />
 
     <div class="column-right"><h1 class ="margin2"></h1></div>
-
 
         <p class="w3-large w3-center w3-padding-16">Things I excel at:</p>
     <div class ="thingsImGoodAt">
@@ -85,8 +86,10 @@
             <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%">70%</div>
         </div>
 </div>
+    <hr /><br>
    <div class=" container">
-    <div class="second-content-bio"> <h1 class ="infoAboutMe">
+    <div class="second-content-bio">
+        <h1 class ="infoAboutMe">
     From a young age, I have always loved the elements of design. For Christmas, I'd ask my parents for label makers,
     gel pens, and font books. I would sit for hours looking at pretty fonts and designing works of art (more like
     kid scribbles) in KidPix and PrintShop. Fast forward 20 years, I started working as a hairstylist, where I could
@@ -97,16 +100,89 @@
     started fresh. I went back to school in 2015 for my A.A.S in software development and am in the midst of a Bachelors of Science
     for Internet and Web Development. Every single day I wake up to experience more of what I love and couldn't be
     more excited to grow professionally and creatively.
-    </h1>
-    <img src="images/stephanieCalifornia.jpg" class="stephaniePicture" height="457" width="600">
+        </h1>
+            <img src="images/stephanieCalifornia.jpg" class="stephaniePicture" height="510" width="620">
     </div>
    </div>
+
+    <hr />
+    <div class="container">
+        <div class="third-content-section">
+            <h1 class ="infoAboutMe">
+                <h1 class ="Mission"><center><b>Mission</b></center></h1>
+                <h2 class="MissionStatement">
+                        I believe that a well developed and designed web site speaks for itself. While other websites may
+                        be cluttered and packed full of content, a web site with structure , goals, and the right design for
+                        the target demographic doesn't have to be jam packed or over saturated. My mission is to develop
+                        visually appealing websites while being goal driven.
+                    </h2>
+
+
+                <br><br>
+                <hr />
+                <h1 class ="Goals"><center><b>Goals</b></center></h1>
+                <div class="column">
+                    <p1>01. EMPOWER MYSELF & OTHERS</p1>
+                    <br>
+                    <p2 class="explanation">By setting myself up for success, I am not only addressing fears and resistances, but am also building
+                        confidence in myself and being realistic about what I can achieve. By pushing myself to the limit, I can
+                        achieve goals I may not have thought I was capable of.</p2>
+                </div>
+                <div class="gutter"></div>
+                <div class="column">
+                    <p1>02. BUILD & FOSTER GROWTH</p1>
+                    <br>
+                    <p2 class="explanation">I will get in there and get my hands dirty. I also want to help others , by giving back to the community
+                        or mentor those may not know what steps to take next. Gratitude is always welcome.</p2>
+                </div>
+                <div class="gutter"></div>
+                <div class="column">
+                    <p1>03. WEB DESIGN & MOBILE WORK</p1>
+                    <br>
+                    <p2 class="explanation">Creative planning should never be overlooked. What you cannot say in words, can sometimes be said with
+                        visual aids. I am always looking for ways to enhance what is already there. Attention to detail is lifestyle, not just a quirk.</p2>
+                </div>
+                <div class="gutter"></div>
+                <div class="column">
+                    <p1>04. WEB DEVELOPMENT& CODING</p1>
+                    <br>
+                    <p2 class="explanation">When you are creating a website it is of great importance that it runs smoothly,
+                        targeted to a demographic, and developed in accordance with specific criteria. You may forget coding is often overlooked,
+                        but is what makes the page run effortlessly. Coding is the weightroom of the website. I plan on hitting those weights everyday.</p2>
+
+
+                </div>
+
+            </h1>
+                </div>
+
+
+
+
+
+    </div>
+
+
+
+    </div>
 </div>
 
 <!-- The Footer Goes Here -->
 <!--- Using the w3Schools frameworks/classes for the layout styles and hover abilities --->
-<footer class="w3-center w3-black w3-padding-16">
+<footer class="footer" id="footer" >
      <a href="https://www.github.com/sczapuchlak" class="w3-hover-text-yellow">&#169; Zapuchlak 2017</a>
+    <div class="footer-social">
+
+        <li><a href="http://www.linkedin.com/in/sczapuchlak">
+            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png' height="25px" width="25px" />
+        </a></li>
+        <li><a href="http://www.github.com/sczapuchlak">
+            <img src='https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png 'height="25px" width="25" />
+        </a></li>
+        <li><a href="https://www.facebook.com/champagne.and.peroxide">
+            <img src='http://condevcenter.org/wp-content/themes/fifteen/images/social/boxed/facebook.png'height="28px" width="28px" />
+        </a></li>
+    </div>
 </footer>
 </body>
 
