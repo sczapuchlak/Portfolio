@@ -45,3 +45,7 @@ var x = setInterval(function() {
         document.getElementById("demo").innerHTML = "Soon! I Promise!";
     }
 }, 1000);
+$(document).ready(function() {
+    var button = $("#fade_out").click(changeBackground);
+});
+
