@@ -8,29 +8,34 @@ text-align: center;
 body {
     background-color: black;
     margin: 0px;
+
 }
 .stephmoji-picture{
-    border-top-color: #f5f5f5;
-    border-top-width: 2px;
-    border-top-style: solid;
+    height: auto;
+    width: auto;
+    max-height: 100px;
+    max-width: 250px;
+    vertical-align: middle;
 }
-.container{
-    color: lightcoral ;
 
-    font-family: 'Great Vibes', cursive, bold;
-}
 #nameHeader{
+    color: coral;
     padding-top: 25%;
     padding-left: 45px;
     font-size: 60px;
+    font-family: 'Great Vibes', cursive, bold;
+    text-shadow: 8px 8px 8px #28d8a9, 0 0 25px rgba(128, 0, 128, 0.37), 0 0 5px darkblue;;
+
 }
-#descriptionHeader{
+
+.descriptionHeader{
+    color: coral;
     font-size: 45px;
     padding-left: 45px;
+    font-family: 'Great Vibes', cursive, bold;
+    text-shadow: 8px 8px 8px #28d8a9, 0 0 25px rgba(128, 0, 128, 0.37), 0 0 5px darkblue;;
 }
-.stephmoji-picture{
-    background-color: black;
-}
+
 #fixedNav ul{
     margin:0;
     padding:0;
@@ -42,20 +47,56 @@ body {
 
 #fixedNav ul li a{
     display: block;
-    color: lightcoral;
+    color: #28d8a9;
     text-align: center;
     padding: 14px 16px;
     font-size: 16px;
     float: right;
+    font-family: "Lato", sans-serif;
 
 
 }
 #fixedNav ul li a:hover{
-    color: coral;
+    color: mediumvioletred;
 }
+.container{
+    color: lightcoral ;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Lato", sans-serif;
+
+}
+
+
 .headerBreak{
     width:100%;
-    height:0;
-    border-bottom: 2px solid #f5f5f5;
+    height:60px;
+    border-bottom: 3px solid lightsalmon;
 }
+.column-left{
+    float: left; width: 20%;
+}
+.column-center{
+    text-align: center;
+   display: inline-block; width: 60%;
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    ;
+}
+.column-right{
+   float: right; width: 20%;
+
+}
+.infoAboutMe{
+    text-align: center;
+    display: inline-block; width: 50%;
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+}
+.stephaniePicture{
+    padding-top: 2.5%;
+    float: right; width: 48%;
+
+}
+
 

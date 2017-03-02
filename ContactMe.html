@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--- Embedding google fonts I want to use --->
+    <link href="https://fonts.googleapis.com/css?family=Lato:li|Great+Vibes" rel="stylesheet">
+    <script rel="script" type="text/javascript" href="jsPortfolio"></script>
+    <!--- The viewport is the visible area of the page. This tag sets the width of the page to the
+    width of the browser window. --->
+
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <!---This downloads bootstrap from a cdn. This adds it to the hmtl file ----->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" id="fixedNav">
+    <ul class="top-vnav-bar" id="myTopNav">
+        <li><a  href="portfolio.html">Home</a> </li>
+        <li><a  href="workIveDone.html">Work I've Done</a> </li>
+        <li><a  class = "active" href="#contactMe">Contact Me</a> </li>
+    </ul>
+    <div class="headerBreak"></div>
+</div>
+
+<header>
+    <div class="jumbotron" style="height: 900px">
+
+        <h1  id="nameHeader">Stephanie Zapuchlak</h1>
+        <h2 class= "descriptionHeader"><img src="images/stephmoji.gif" class="stephmoji-picture"> </h2>
+        <h2  class="descriptionHeader"> web developer</h2>
+    </div>
+</header>
+
+<div class="container">
+    <div class="column-left"><h1 class ="margin1"> </h1></div>
+    <div class="column-center">
+        <h1> Feel free to contact me with any questions or comments!</h1>
+        <form id="contact-form" class="form" action="#" method="POST" role="form">
+            <div class="form-group">
+                <label class="form-label" for="name">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="email">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="subject">Subject</label>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3">
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="message">Message</label>
+                <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4" required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-start-order">Send Message</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+    </h1>
+        </h1></div>
+
+    <div class="column-right"><h1 class ="margin2"></h1></div>
+
+
+
+</div>
+
+
+<!-- The Footer Goes Here -->
+<!--- Using the w3Schools frameworks/classes for the layout styles and hover abilities --->
+<footer class="w3-center w3-black w3-padding-16">
+    <a href="https://www.github.com/sczapuchlak" class="w3-hover-text-yellow">&#169; Zapuchlak 2017</a>
+</footer>
+</body>
+
+</html>

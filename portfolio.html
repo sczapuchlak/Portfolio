@@ -2,12 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Stephanie's Portfolio</title>
-            <link rel="stylesheet" type="text/css" href="styles.css">
-    <!--- Embedding google fonts I want to use --->
-        <link href="https://fonts.googleapis.com/css?family=Rouge+Script|Great+Vibes" rel="stylesheet">
+            <title>Stephanie's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+            <!--- Embedding google fonts I want to use --->
+        <link href="https://fonts.googleapis.com/css?family=Lato:li|Great+Vibes" rel="stylesheet">
+            <!----Link to the W3Schools template I used for the 'Things I'm Really Good At' Section--->
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+            <!--- Link to font awesome for the icons displayed on page --->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <!--- Link to the graph I learned how to make at canvasjs--->
+        <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
-    <!--- The viewport is the visible area of the page. This tag sets the width of the page to the
+
+
+        <!--- The viewport is the visible area of the page. This tag sets the width of the page to the
     width of the browser window. --->
 
         <meta name="viewport" content="width=device-width initial-scale=1">
@@ -18,30 +26,88 @@
 
 <body>
 
-<header>
-    <div class="navbar navbar-inverse navbar-fixed-top" id="fixedNav">
-        <img src="images/stephmoji.gif" class="stephmoji-picture" width="6%" height="6%">
-            <ul class="top-vnav-bar" id="myTopNav">
-                <li><a class="active" href="#home">Home</a> </li>
-                <li><a  href="#work">Work I've Done</a> </li>
-                <li><a  href="#contactMe">Contact Me</a> </li>
-
-                <!---<li><a href="javascript:void(0);"class="menuDropdown" style="font-size:15px;" onclick="myFunction()">☰</a></li>-->
-                </li>
-            </ul>
-        <div class="headerBreak"></div>
-    </div>
+<div class="navbar navbar-inverse navbar-fixed-top" id="fixedNav">
+    <ul class="top-vnav-bar" id="myTopNav">
+        <li><a class="active" href="#home">Home</a> </li>
+        <li><a  href="workIveDone.html">Work I've Done</a> </li>
+        <li><a  href="ContactMe.html">Contact Me</a> </li>
+    </ul>
     <div class="headerBreak"></div>
-    <div class="jumbotron" style="height: 900px">
-        <div class="container">
-        <h1  id="nameHeader">I am Stephanie</h1>
-        <h2  id="descriptionHeader">a web developer</h2>
+</div>
+
+    <header>
+        <div class="jumbotron" style="height: 900px">
+
+            <h1  id="nameHeader">Stephanie Zapuchlak</h1>
+            <h2 class= "descriptionHeader"><img src="images/stephmoji.gif" class="stephmoji-picture"> </h2>
+             <h2  class="descriptionHeader"> web developer</h2>
         </div>
+    </header>
+
+<div class="container">
+    <div class="column-left"><h1 class ="margin1"> </h1></div>
+        <div class="column-center"> <h1 class ="about-me">
+            My name is Stephanie Zapuchlak and I am a <b>Web Developer and Designer</b>.
+            I have a passion for making beautiful, cohesive sites with intuitive
+            interfaces. Not only do I enjoy the design process, but coding has
+            become one of my favorite pastimes. I am based out of <b>Minneapolis, Minnesota</b>
+            , but like a true <b>Wisconsinite</b>  I live every day with compassion and a warm soul ( <b>despite
+            the icy cold weather *le sigh* </b>). No matter the distance or where I end up, my heart still lies
+            in the Wisconsin traditions of <b> bubbly beer</b>,<b> great cheese</b>, <b>and interesting conversation.</b>
+    </h1></div>
+
+    <div class="column-right"><h1 class ="margin2"></h1></div>
+
+    <div class="column-right"><h1 class ="margin2"></h1></div>
+
+
+        <p class="w3-large w3-center w3-padding-16">Things I excel at:</p>
+    <div class ="thingsImGoodAt">
+        <p class="w3-wide"><i class="fa fa-hand-spock-o"></i>Running Around Screaming With Excitement When I Learn Something New</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100%</div>
+        </div>
+
+            <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+        <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
     </div>
+        <p class="w3-wide"><i class="fa fa-github"></i>Web Development/Coding</p>
+            <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-user-circle"></i>User Experience</p>
+    <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+    </div>
+        <p class="w3-wide"><i class="fa fa-creative-commons"></i>Adobe Creative Cloud/Axure/Applications</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%">70%</div>
+        </div>
+</div>
+   <div class=" container">
+    <div class="second-content-bio"> <h1 class ="infoAboutMe">
+    From a young age, I have always loved the elements of design. For Christmas, I'd ask my parents for label makers,
+    gel pens, and font books. I would sit for hours looking at pretty fonts and designing works of art (more like
+    kid scribbles) in KidPix and PrintShop. Fast forward 20 years, I started working as a hairstylist, where I could
+    use that creative freedom to create lovely works of hair art. But something was still missing. In my spare time in
+    between clients, I'd hop on the computer to touch up client before/after photos and work on the company blog.
+    The more I sat behind the computer and designed, the more I felt at home.  I kept ignoring that
+    little whisper in the back of my head to do something in the tech world, until I uprooted to Minneapolis and
+    started fresh. I went back to school in 2015 for my A.A.S in software development and am in the midst of a Bachelors of Science
+    for Internet and Web Development. Every single day I wake up to experience more of what I love and couldn't be
+    more excited to grow professionally and creatively.
+    </h1>
+    <img src="images/stephanieCalifornia.jpg" class="stephaniePicture" height="457" width="600">
+    </div>
+   </div>
+</div>
 
-
-</header>
-
-
+<!-- The Footer Goes Here -->
+<!--- Using the w3Schools frameworks/classes for the layout styles and hover abilities --->
+<footer class="w3-center w3-black w3-padding-16">
+     <a href="https://www.github.com/sczapuchlak" class="w3-hover-text-yellow">&#169; Zapuchlak 2017</a>
+</footer>
 </body>
+
 </html>
