@@ -1,20 +1,20 @@
-
+// this function takes the name field of the contact me field and makes it uppercase
 function upperCase() {
     var x = document.getElementById("name");
     x.value = x.value.toUpperCase();}
-
+//the move over function changes font in the header
 function mOver(obj) {
     obj.innerHTML = "Being yourself is."
 }
-
+//the move over function changes font in the header
 function mOut(obj) {
     obj.innerHTML = "Standing out is."
 }
-
+//the move over function changes font in the about me underneath the stephmoji
 function mOverDesign(obj) {
     obj.innerHTML = "Web Designer"
 }
-
+//the move over function changes font in the about me underneath the stephmoji
     function mOutDesign(obj) {
         obj.innerHTML = "Web Developer"
     }
