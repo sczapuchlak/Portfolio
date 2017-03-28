@@ -17,12 +17,14 @@ body {
     max-height: 100px;
     max-width: 250px;
     vertical-align: middle;
+
 }
 #standingOutQuote{
     color: #c71585;
     padding-top: 250px;
     padding-left:10px;
     font-size: 120px;
+    width: 100%;
     font-family: 'Great Vibes', cursive, bold;
     text-shadow: 8px 8px 14px #28d8a9, 0 0 0px #FCA263, 0 0 5px blue;;
 }
@@ -108,13 +110,13 @@ body {
 }
 .infoAboutMe{
     text-align: center;
-    display: inline-block; width: 50%;
+    float: left; width: 550px;
     font-family: "Lato", sans-serif;
     font-size: 24px;
 }
 .stephaniePicture{
     padding-top: 2.5%;
-    float: right; width: 48%;
+    float: right; width: 550px;
 
 }
 #footer{
@@ -236,4 +238,26 @@ body {
     font-size: 30px;
     font-family: 'Great Vibes', cursive, bold;
     text-shadow: 2px 0px 2px #c71585, 0px 0px 6px rgba(252, 162, 99, 0.87), 0px 0px 6px darkblue;;
+}
+footer a{
+    color: #28ffd0;
+}
+@media screen and (max-width: 400px) {
+    .infoAboutMe {
+        float: none;
+        margin-right: 0;
+        width: auto;
+        border: 0;
+        border-bottom: 2px solid #000;
+    }
+}
+.infoAboutMe3{
+    text-align: center;
+    position: relative;width: 100%;
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+}
+.second-content-bio{
+    width: 100%;
+    height: 100px;
 }
