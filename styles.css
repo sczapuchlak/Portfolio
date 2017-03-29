@@ -4,11 +4,13 @@
     background-image: url("images/oceanpic.jpg");
     background-size: auto;
     border-bottom: solid 2px rgb(199, 21, 133);
-
+    width: 100%;
+    size: 40vh;
 }
 body {
     background-color: black;
     margin: 0px;
+    font-family: "Lato", sans-serif, bolder;
 
 }
 .stephmoji-picture{
@@ -21,9 +23,9 @@ body {
 }
 #standingOutQuote{
     color: #c71585;
-    padding-top: 250px;
-    padding-left:10px;
-    font-size: 120px;
+    padding-top: 300px;
+    padding-left:9px;
+    font-size: 14vh;
     width: 100%;
     font-family: 'Great Vibes', cursive, bold;
     text-shadow: 8px 8px 14px #28d8a9, 0 0 0px #FCA263, 0 0 5px blue;;
@@ -31,8 +33,8 @@ body {
 #standingOutQuote2{
     color: #c71585;
     padding-top: 10px;
-    padding-left: 10px;
-    font-size: 120px;
+    padding-left: 9px;
+    font-size:14vh ;
     font-family: 'Great Vibes', cursive, bold;
     text-shadow: 8px 8px 14px #28d8a9, 0 0 0px #FCA263, 0 0 5px blue;;
 }
@@ -53,32 +55,29 @@ body {
     font-family: 'Great Vibes', cursive, bold;
     text-shadow: 8px 8px 8px #28d8a9, 0 0 25px rgba(128, 0, 128, 0.37), 0 0 5px darkblue;;
 }
-.navbar{
+.topnav{
     background-color: black;
 }
-#fixedNav ul{
+.topnav a{
+    float: left;
     background-color: black;
     margin:0;
-    padding:0;
-}
-
-#fixedNav ul li {
-    list-style: none;
-}
-
-#fixedNav ul li a{
     display: block;
     color: #28ffd0;
     text-align: center;
     padding: 14px 16px;
     font-size: 16px;
-    float: right;
+
     font-family: "Lato", sans-serif;
-
-
 }
-#fixedNav ul li a:hover{
+
+.topnav a:hover{
+   font-weight: bold;
     color: #c71585;
+    background-color: #28ffd0;
+}
+.topnav .icon{
+    display: none;
 }
 .container{
     color: #c71585;
@@ -131,8 +130,8 @@ body {
     box-sizing: border-box;
     position: relative;
     width: 100%;
-}
 
+}
 .column {
     padding-top: 3%;
     width: 20%;
@@ -230,8 +229,8 @@ body {
     width: 600px;
 }
 #littleSteph{
-    float: left;
-    position: absolute;
+    float: right;
+
     color: #28ffd0;
     text-align: center;
     padding-top: 5px;
@@ -242,15 +241,7 @@ body {
 footer a{
     color: #28ffd0;
 }
-@media screen and (max-width: 400px) {
-    .infoAboutMe {
-        float: none;
-        margin-right: 0;
-        width: auto;
-        border: 0;
-        border-bottom: 2px solid #000;
-    }
-}
+
 .infoAboutMe3{
     text-align: center;
     position: relative;width: 100%;
@@ -260,4 +251,36 @@ footer a{
 .second-content-bio{
     width: 100%;
     height: 100px;
+}
+@media screen and (max-width: 600px) {
+    .infoAboutMe {
+        float: none;
+        margin-right: 0;
+        width: auto;
+        border: 0;
+        border-bottom: 2px solid #000;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    }
+    @media screen and (max-width: 600px) {
+        .topnav.responsive {position: relative;}
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+
+        #littleSteph{
+            resize: both;
+
+        }
 }

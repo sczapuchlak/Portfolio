@@ -45,7 +45,18 @@ var x = setInterval(function() {
         document.getElementById("demo").innerHTML = "Soon! I Promise!";
     }
 }, 1000);
+
+
 $(document).ready(function() {
     var button = $("#fade_out").click(changeBackground);
 });
 
+// this is to make my hamburger bun appear and dissapear
+function myFunction() {
+    var x = document.getElementById("fixedNav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
