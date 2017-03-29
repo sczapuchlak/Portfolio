@@ -5,7 +5,7 @@
     background-size: auto;
     border-bottom: solid 2px rgb(199, 21, 133);
     width: 100%;
-    size: 40vh;
+
 }
 body {
     background-color: black;
@@ -23,9 +23,9 @@ body {
 }
 #standingOutQuote{
     color: #c71585;
-    padding-top: 300px;
+    padding-top: 250px;
     padding-left:9px;
-    font-size: 14vh;
+    font-size: 12vh;
     width: 100%;
     font-family: 'Great Vibes', cursive, bold;
     text-shadow: 8px 8px 14px #28d8a9, 0 0 0px #FCA263, 0 0 5px blue;;
@@ -34,7 +34,7 @@ body {
     color: #c71585;
     padding-top: 10px;
     padding-left: 9px;
-    font-size:14vh ;
+    font-size:12vh ;
     font-family: 'Great Vibes', cursive, bold;
     text-shadow: 8px 8px 14px #28d8a9, 0 0 0px #FCA263, 0 0 5px blue;;
 }
